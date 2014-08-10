@@ -1,0 +1,27 @@
+{
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "manifest_version": 2,
+  "name": "ChromeOS-USB-Utils",
+  "version": "0.0.0",
+
+  "default_locale": "en",
+  "description": "A suite of utilities for getting raw access to USB devices",
+
+  "author": "Def Hax <defhax19999827665@gmail.com>",
+  "offline_enabled": true,
+  "permissions": [
+     "usb",
+    {
+      "usbDevices": [
+        {
+          "vendorId": 1027,
+          "productId": 24597
+        }
+      ]
+    }
+  ]
+}
